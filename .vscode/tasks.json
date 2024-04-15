@@ -1,0 +1,19 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sync protos default",
+            "type": "shell",
+            "command": "rsync",
+            "args": ["-vr", "${workspaceFolder}/../ProPresenter7-Proto/proto", "${workspaceFolder}/lib/src"]
+        },
+        {
+            "label": "sync protos 7.16",
+            "type": "shell",
+            "command": "rsync",
+            "args": ["-vr", "${workspaceFolder}/../ProPresenter7-Proto/Proto 7.16", "${workspaceFolder}/lib/src"]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "protoc": {
+        // protoc should be on PATH, otherwise uncomment and edit:
+        //"path": "/opt/homebrew/bin/protoc",
+        "compile_all_path": "${workspaceRoot}/lib/src/proto",
+        "options": [
+            "--proto_path=lib/src/proto",
+            "--dart_out=lib/src",
+            // protoc-gen-dart should be on PATH, otherwise uncomment and edit:
+            //"--plugin=${userHome}/.pub-cache/bin/protoc-gen-dart",
+        ]
+    }
+}
