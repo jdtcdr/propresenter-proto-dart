@@ -59,11 +59,18 @@ To build the library don't forget to get the dependencies with
 dart pub get
 ```
 
-To run the example program:
+To run the example program on a Presentation:
 
 ```
 dart example/propresenter_proto_example.dart [path to .pro file]
 ```
+
+This also serves as a test on real data that decoding and re-encoding a
+Presentation does not alter the bytes. If you use a document that contains
+fields not present in the version of proto definitions underlying this
+library, the example program will show the number of such 'unknown' fields
+and should verify that they can be written out again without having the
+field definition in the library.
 
 ## Building
 
